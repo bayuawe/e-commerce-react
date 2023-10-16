@@ -1,35 +1,62 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
-import './Header.css'; // Mengimpor file CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Header.css"
 
-function Header() {
+const Header = () => {
   return (
-    <Navbar className="header" bg="light" expand="lg">
-      <Navbar.Brand href="#">Toko Roti</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#">Beranda</Nav.Link>
-          <Nav.Link href="#">Produk</Nav.Link>
-          <Nav.Link href="#">Tentang Kami</Nav.Link>
-          {/* Tambahkan menu lain jika diperlukan */}
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Cari produk..." className="mr-sm-2" />
-          <Button variant="outline-success">Cari</Button>
-        </Form>
-        <Nav className="ml-2">
-          <Nav.Item>
-            <Nav.Link href="#">Keranjang Belanja</Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <a className="navbar-brand" href="/">
+          <img src="/logo.png" alt="Logo" />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="/home">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/about">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form className="form-inline ml-auto">
+          <div className="input-group">
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div className="input-group-append">
+              <button className="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
   );
-}
+};
 
 export default Header;
