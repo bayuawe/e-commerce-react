@@ -1,0 +1,38 @@
+/* Contoh CSS untuk header */
+.header {
+    background-color: #f8f9fa; /* Warna latar belakang header */
+    border-bottom: 1px solid #ddd; /* Garis bawah header */
+    padding: 10px 0; /* Ruang di atas dan bawah header */
+  }
+  
+  .navbar-brand {
+    font-size: 24px; /* Ukuran teks merek */
+    font-weight: bold; /* Ketebalan teks merek */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Ukuran teks menu */
+    color: #333; /* Warna teks menu */
+    margin-right: 15px; /* Jarak antar menu */
+    transition: color 0.3s ease; /* Transisi warna teks saat dihover */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Warna teks saat dihover */
+  }
+  
+  .form-control {
+    border-radius: 0; /* Menghilangkan sudut bulat pada input */
+    border-color: #ddd; /* Warna garis input */
+  }
+  
+  .btn-outline-success {
+    border-color: #28a745; /* Warna garis tombol pencarian */
+    color: #28a745; /* Warna teks tombol pencarian */
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745; /* Warna latar belakang tombol saat dihover */
+    color: #fff; /* Warna teks tombol saat dihover */
+  }
+  

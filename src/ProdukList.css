@@ -1,0 +1,31 @@
+/* CSS untuk kartu produk */
+.card {
+  border: 1px solid #ddd; /* Garis tepi kartu */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Efek bayangan kartu */
+  transition: box-shadow 0.3s ease; /* Transisi efek bayangan saat hover */
+  height: 100%; /* Sesuaikan tinggi kartu */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.card-img-top {
+  max-height: 200px; /* Tinggi maksimum gambar */
+  object-fit: cover; /* Mengisi gambar ke dalam kotak */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Ukuran font judul */
+  font-weight: bold; /* Ketebalan font judul */
+  margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.card-text {
+  font-size: 1rem; /* Ukuran font teks deskripsi */
+  margin-bottom: 10px; /* Jarak bawah teks deskripsi */
+}
+
+.text-muted {
+  color: #888; /* Warna teks informasi tambahan (misalnya, "Last updated 3 mins ago") */
+}
